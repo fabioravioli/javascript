@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: rgb(184, 199, 199);
+    padding-bottom: 20px;
+    padding-top: 30px;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+h1 {
+    text-align:center;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.livelli {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 10px;
+
+}
+
+.livelli button {
+    width: 150px;
+    border: 1px solid white;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    background-color: rgb(184, 199, 199);
+    display: block;
+}
+
+.livelli button:hover {
+    background-color: white;
+    color: rgb(184, 199, 199);
+}
+
+.container-grid {
+    background-color: rgb(184, 199, 199);
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+    width:max-content;
+}
+
+
+.cella {
+    display:block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 31px;
+    float: left;
+    position: relative;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: lightgrey;
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: grey;
+    border-bottom-color: grey;
+    border-style: groove;
+    border-width:4px;
+
+}
+
+.grid .cella:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.grid .cella.selected {
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+.bar {
+    position: relative;
+    margin: 20px auto;
+    width: 50%;
+    height:150px;
+    border: 3px solid black;
+}
+
+
+.contentFlag {
+    width: 220px;
+    height: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    position:absolute;
+    top: 50%;
+    left: 10%;
+    margin-top: -50px;
+}
+
+.countFlagged {
+    width: 55px;
+    height: 55px;
+    margin: 20px auto;
+    color: red;
+    border: 3px solid black;
+    font-size: 28px;
+    line-height:55px;
+}
+
+
+
+.newGameContainer {
+    height: 80px;
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    right: 10%;
+}
+
+
+#newGame{
+    font-size: 24px;
+    text-align: center;
+    background-color:beige;
+    width: 100%;
+    height: 100%;
+}
+
+#newGame:hover {
+    background-color: rgb(235, 216, 216);
+}
+
+#newGame:active {
+    box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.cella.colpita {
+    background-color: red;
+}
+
+.cella.colpita:hover {
+    background-color: red;
+}
+
+.cella[data-valore='1'] {
+    color: blue;
+}
+
+.cella[data-valore='2'] {
+    color: green;
+}
+
+.cella[data-valore='3'] {
+    color: red;
+}
+
+.cella[data-valore='4'] {
+    color: darkblue;
+}
+
+.cella[data-valore='5'] {
+    color: brown;
+}
+
+.cella[data-valore='6'] {
+    color: darkcyan;
+}
+
+.cella[data-valore='7'] {
+    color: darkgoldenrod;
+}
+
+.cella[data-valore='8'] {
+    color: black;
+}
+
+.message {
+    width: 50%;
+    min-height: 50px;
+    margin: 0 auto;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+}
+
+.winner {
+    color: green;
+}
+
+.lose {
+    color: red;
+}
+
+
+footer{
+    margin-top: 30px;
+    text-align: center;
+}
+footer span {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width:1100px ) {
+
+
+    .container {
+        max-width: 100vw;
+    }
+
+    .livelli {
+        position:relative;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .livelli button {
+        display: inline-block;
+    }
+
+    .bar {
+        width: 60vw;
+    }
+
+    .container-grid {
+        max-width: 95vw;
+        min-height: 400px;
+        margin: 0 auto;
+        background-color: rgb(184, 199, 199);
+    }
+
+    .container-grid .cella {
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+        font-size: 12px;
+        border-width:2px;
+    }
+}
+
+@media screen and (max-width:760px ) {
+    .message:before {
+        content: 'DISPLAY TROPPO PICCOLO PER POTER GIOCARE';
+    }
+
+    .container-grid {
+        display: none;
+    }
+
+    .bar {
+        position:static;
+        height: auto;
+        text-align: center;
+    }
+    .bar .contentFlag {
+        position: relative;
+        margin: 10px auto;
+        top: 0;
+        left: 0;
+
+
+    }
+    .bar .newGameContainer {
+        position: relative;
+        margin: 10px auto;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}

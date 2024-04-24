@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Campo Minato</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CAMPO MINATO</h1>
+            <h3> Scopri tutte le caselle ed evita tutte bombe!</h3>
+            <div class="livelli">
+                <button class="facile" data-level="1">Facile</button>
+                <button class="intermedio" data-level="2">Intermedio</button>
+                <button class="difficile" data-level="3">Difficile</button>
+            </div>
+        </header>
+
+
+        <section>
+            <div class="bar">
+                <div class="contentFlag">
+                    <span>Bandierine disponibili</span>
+                    <div class="countFlagged"></div>
+                </div>
+
+                <div class="newGameContainer">
+                    <button type="button" id="newGame">NEW GAME</button>
+                </div>
+            </div>
+
+        </section>
+
+        <main>
+            <div class="message"></div>
+
+            <div class="container-grid">
+                <div class="grid">
+    
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <hr>
+            <span> by Fab </span>
+        </footer>
+
+
+    </div>
+
+<script src="campominato.js"> </script>
+</body>
+</html>
