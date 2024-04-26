@@ -7,7 +7,7 @@ const animals = ["img/card/animali/01.png", "img/card/animali/02.png", "img/card
 
 /*OPZIONI DI GIOCO*/
 
-let CARD = 10; //il numero delle carte totali sul campo di gioco
+let CARD = 12; //il numero delle carte totali sul campo di gioco
 
 let maxCARDperROW = 0; //numero massimo di card visualizzabili per ogni riga
 
@@ -259,7 +259,7 @@ function setLevel () {
     var level = this.getAttribute("data-level");
 
     if (level == '1') {
-        CARD = 10;
+        CARD = 12;
         start();
     }
     else if (level == '2') {
