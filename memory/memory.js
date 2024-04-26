@@ -263,7 +263,7 @@ function setLevel () {
         start();
     }
     else if (level == '2') {
-        CARD = 25;
+        CARD = 24;
         start();
     }
     else if (level == '3')
