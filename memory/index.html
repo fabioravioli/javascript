@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="banner">
+                <h1> MEMORY</h1>
+                <h3>
+                    Scopri 2 carte alla volta, se sono uguali ti aggiudichi 1 punto. <br/>
+                    Vinci quando scopri tutte le carte!
+                </h3>
+                <button id="newgame"> NEW GAME </button>
+
+                <div class="livelli">
+                    <button class="facile" data-level="1">Facile</button>
+                    <button class="intermedio" data-level="2">Intermedio</button>
+                    <button class="difficile" data-level="3">Difficile</button>
+                </div>
+                
+            </div>
+            <div class="message">
+                <span>Punti</span>
+                <div id="punteggio"></div>
+
+                <div class="end"></div>
+            </div>
+        </header>
+
+        <main>
+            <div class="grid"></div>
+        </main>
+
+
+    </div>
+    
+
+    <script src="memory.js"> </script>
+</body>
+</html>
